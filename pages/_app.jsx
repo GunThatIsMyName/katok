@@ -50,24 +50,24 @@ function MyApp({ Component, pageProps }) {
         <h1>{mbti.join("")}</h1>
         <div className="d-flex justify-content-center align-items-center" > 
           <div className="d-flex flex-column">
-          <Button name="A" data-mbti="1" onClick={handleClick} >A</Button>
+          <Button className={mbti[0]==="A"?"bg-danger":""} name="A" data-mbti="1" onClick={handleClick} >A</Button>
           <hr />
-          <Button name="ㄱ" data-mbti="1" onClick={handleClick} >ㄱ</Button>
+          <Button className={mbti[0]==="ㄱ"?"bg-danger":""} name="ㄱ" data-mbti="1" onClick={handleClick} >ㄱ</Button>
           </div>
           <div className="d-flex flex-column">
-          <Button name="B" data-mbti="2" onClick={handleClick} >B</Button>
+          <Button className={mbti[1]==="B"?"bg-danger":""} name="B" data-mbti="2" onClick={handleClick} >B</Button>
           <hr />
-          <Button name="ㄴ" data-mbti="2" onClick={handleClick} >ㄴ</Button>
+          <Button className={mbti[1]==="ㄴ"?"bg-danger":""} name="ㄴ" data-mbti="2" onClick={handleClick} >ㄴ</Button>
           </div>
           <div className="d-flex flex-column">
-          <Button name="C" data-mbti="3" onClick={handleClick} >C</Button>
+          <Button className={mbti[2]==="C"?"bg-danger":""} name="C" data-mbti="3" onClick={handleClick} >C</Button>
           <hr />
-          <Button name="ㄷ" data-mbti="3" onClick={handleClick} >ㄷ</Button>
+          <Button className={mbti[2]==="ㄷ"?"bg-danger":""} name="ㄷ" data-mbti="3" onClick={handleClick} >ㄷ</Button>
           </div>
           <div className="d-flex flex-column">
-          <Button name="D" data-mbti="4" onClick={handleClick} >D</Button>
+          <Button className={mbti[3]==="D"?"bg-danger":""} name="D" data-mbti="4" onClick={handleClick} >D</Button>
           <hr />
-          <Button name="ㄹ" data-mbti="4" onClick={handleClick} >ㄹ</Button>
+          <Button className={mbti[3]==="ㄹ"?"bg-danger":""} name="ㄹ" data-mbti="4" onClick={handleClick} >ㄹ</Button>
           </div>
         </div>
           <Component {...pageProps} />

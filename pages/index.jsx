@@ -74,7 +74,7 @@ function Home(props) {
                 <td className="text-center" >
                   <Link href={`/coin/${item.symbol}`}>
                     <a className="text-white text-decoration-none" >
-                      <Image src={item.image} width={30} height={30} />
+                      <Image src={item.image} width={30} height={30} alt={item.name} />
                     </a>
                   </Link>
                 </td>
